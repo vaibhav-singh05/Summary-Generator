@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | YourApp</title>
+    <link rel="stylesheet" href="./static/Login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="logo">
+            <!-- CONVERT THIS IN .png  -->
+            <!-- <img src="./logo.jpg" alt="Your Logo">  -->
+        </div>
+        <h2>Login to Wizard</h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div class="or-divider">
+            <span>Or</span>
+        </div>
+        <button class="google-btn" onclick="signInWithGoogle()">
+            Sign in with Google
+        </button>
+        <form action="/signup" method="POST">
+            <div class="signup-link">
+                Don't have an account?
+                <button type="submit" name="username">Sign up here</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function signInWithGoogle() {
+            // Redirect to Google sign-in page or handle authentication using OAuth 2.0
+            // Example: window.location.href = 'https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email%20profile&access_type=offline';
+            // Replace YOUR_CLIENT_ID and YOUR_REDIRECT_URI with appropriate values
+        }
+    </script>
+</body>
+
+</html>

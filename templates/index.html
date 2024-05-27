@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary Generator</title>
+    <link rel="stylesheet" href="./static/style.css" />
+</head>
+
+<body class="icolor">
+    <div class="container">
+        <h1>WIZARD</h1>
+        <p>Stop struggling with long reads!</p>
+        <form action="/analyze" method="POST">
+            <div class="content-wrapper">
+                <div class="text-column">
+                    <h2>Original Text</h2>
+                    <textarea name="rawtext" placeholder="Enter your text here..."></textarea>
+                </div>
+            </div>
+            <button id="summarizeButton" type="submit">Summarize</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

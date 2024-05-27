@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+  /* Set a maximum width for the container */
+  margin: 50px auto;
+  /* Center the container horizontally */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(105, 218, 224);
+}
+
+.icolor {
+  background-color: black;
+}
+
+/* .ibcolor1 {
+  background-color: rgb(151, 72, 84);
+}
+
+.ibcolor2 {
+  background-color: rgb(135, 55, 135);
+} */
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #0a021c;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  /* Enable flexbox layout */
+}
+
+.text-column,
+.summary-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid rgb(57, 57, 160);
+  /* Add a border to separate columns */
+  border-radius: 3px;
+
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  /* Adjust height as needed */
+  padding: 1px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+#summary {
+  font-size: 16px;
+  line-height: 1.5;
+  /* Adjust line spacing for readability */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 116px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-flex;
+  /* Make button fill full width */
+  font-size: 16px;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.word-count-box {
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 3px;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #000000;
+  display: block;
+  /* Display word count box inline */
+}

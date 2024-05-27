@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary Generator</title>
+    <link rel="stylesheet" href="./static/style.css" />
+</head>
+
+<body class="icolor">
+    <div class="container">
+        <h1>WIZARD</h1>
+        <p>Stop struggling with long reads!</p>
+        <div class="content-wrapper">
+            <div class="text-column ibcolor1">
+                <h2>Original Text</h2>
+                <textarea onkeyup="updateWordCount('original')">{{original_text}}</textarea>
+                <div class="word-count-box">
+                    <span id="wordCountOriginal">{{len_orig_txt}}</span>
+                </div>
+            </div>
+
+            <div class="summary-column ibcolor2">
+                <h2>Summary</h2>
+                <textarea id="inputText" onkeyup="updateWordCount('original')">{{summary}}</textarea>
+                <p id="summary"></p>
+                <div class="word-count-box">
+                    <span id="wordCountSummary">{{len_summary}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
