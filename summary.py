@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 # for backward compatibility, you can still use https://api.deepseek.com/v1 as base_url.
-client = OpenAI(api_key="", base_url="https://api.deepseek.com")
+client = OpenAI(api_key="sk-5571256aa2734770bff00fee7cea1d6b", base_url="https://api.deepseek.com")
 
 
 def get_summary_from_text(text: str, summary_length= 100) -> str:
